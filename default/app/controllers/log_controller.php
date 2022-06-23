@@ -1,6 +1,6 @@
 <?php
 
-class LoginController extends RestLoginController{
+class LogController extends RestLoginController{
     public function post()
     {
         $this->data =
