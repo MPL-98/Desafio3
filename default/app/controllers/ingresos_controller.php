@@ -1,0 +1,11 @@
+<?php
+
+class IngresosController extends RestController{
+    public function getAll()
+    {
+        $this->data = (new Ingresos())->find();
+    }
+    public function get_paginar($page=1)
+    {
+        $this->data = (new Ingresos())->paginate("page: $page", 'order: id desc');
+    }
